@@ -1,0 +1,34 @@
+planes:
+  - {
+    title: "Basic",
+    cost: "$5.01/Month",
+    detail1: "Lorem ipsum",
+    detail2: "Dolor sit amet, consect",
+    detail3: "Adipiscing elit",
+    detail4: "Poin Commodo turpis",
+    detail5: "Lacus purmiarvel",
+    detail6: "Prnare nisi pretium",
+    href: "http://middlemanapp.com/"
+  }
+  - {
+    title: "Pro",
+    cost: "$10.01/Month",
+    detail1: "Lorem ipsum",
+    detail2: "Dolor sit amet, consect",
+    detail3: "Adipiscing elit",
+    detail4: "Poin Commodo turpis",
+    detail5: "Lacus purmiarvel",
+    detail6: "Prnare nisi pretium",
+    href: "http://www.lipsum.com/"
+  }
+  - {
+    title: "Premium",
+    cost: "$20.01/Month",
+    detail1: "Lorem ipsum",
+    detail2: "Dolor sit amet, consect",
+    detail3: "Adipiscing elit",
+    detail4: "Poin Commodo turpis",
+    detail5: "Lacus purmiarvel",
+    detail6: "Prnare nisi pretium",
+    href: "https://github.com"
+  }
