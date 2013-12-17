@@ -1,0 +1,47 @@
+/* header */
+
+header{
+  h1{
+    display:inline-block;
+    vertical-align: middle;
+    width: 18%;
+    text-align: right;
+
+    img{
+      width: 100%;
+      max-width: 130px;
+      height: 45px;
+    }
+  }
+
+  nav{
+    display: inline-block;
+    vertical-align: middle;
+    width: 79%;
+    text-align:right;
+
+    ul{
+      margin-right: 8.5%;
+
+      li{
+        display: inline-block;
+
+        &:hover{
+          a{
+            background:$hover-menu;
+            border-bottom: 3px solid $border-bottom;
+            color:$border-bottom;
+          }
+        }
+
+        a{
+          border-bottom: 3px solid transparent;
+          padding: 40px 25px;
+        }
+      }
+    }
+  }
+
+}
+
+/* End header */

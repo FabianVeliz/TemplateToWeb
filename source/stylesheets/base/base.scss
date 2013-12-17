@@ -1,0 +1,52 @@
+/* Colores */
+$black:#000;
+$gray:#4e525d;
+$verde:#4cc8d0;
+$border-bottom:#4accce;
+$hover-menu:#f8f9fb;
+$blanco:#fff;
+
+/* Fuentes*/
+$open:'Open Sans', sans-serif;
+
+/* Reset */
+h1,h2,h3,h4,h5,h6,p,ul{
+  margin:0;
+  padding: 0;
+}
+
+body{
+  font-size:62.5%;
+}
+
+
+/* Contenedor */
+.container{
+  margin:0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+/*Estilos para elementos ul y a*/
+ul{
+  list-style: none;
+
+    li a{
+      color:$gray;
+      display: block;
+      text-decoration: none;
+      font-family:$open;
+      font-size: 1.5em;
+    }
+}
+
+/* Estilo boton base*/
+.buttom-base{
+  background: $verde;
+  color:$blanco;
+  padding: 5px 15px;
+  font-family: $open;
+  font-size: 1.3em;
+  border-radius: 5px;
+  text-decoration: none;
+}

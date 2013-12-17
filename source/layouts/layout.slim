@@ -8,15 +8,16 @@ html
 
     title="#{current_page.data.title}"
 
-    = "#{stylesheet_link_tag "all"}"
+    ="#{stylesheet_link_tag "all"}"
 
-    link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,700' rel='stylesheet' type='text/css'
+    link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,7001|Open+Sans:400,300,600,200' rel='stylesheet' type='text/css'
 
   body class="#{page_classes}"
 
-    .contenedor
+    .container
       = partial 'header'
       == yield
       //= partial 'footer'
 
     script type="text/javascript" src="../javascripts/all.js"
+
