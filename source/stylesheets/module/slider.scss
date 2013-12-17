@@ -1,10 +1,11 @@
 /* Carga estilos predefinidos del slide */
 @import "idangerous.swiper";
 
-//estilos Slider
-section.algo{
+/* Estilos del slider */
+section#slider{
   position:relative;
   font-family:$open;
+  height:565px;
 
   .swiper-container{
     width:100%;
@@ -86,11 +87,10 @@ section.algo{
   line-height: 39px;
   border-radius: 45px;
   font-weight: 200;
-  font-family: "Open Sans";
+  font-family:$open;
 }
 
 #next{
   left:95%;
 }
 
-//Fin estilos Slider

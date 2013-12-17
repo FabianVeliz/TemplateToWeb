@@ -1,0 +1,28 @@
+person:
+  - {
+    img: "http://placehold.it/210x200/f1f1f1/f46c6c",
+    name: "Adrian Thomas",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+    job: "Ceo & Founder"
+  }
+
+  - {
+    img: "http://placehold.it/210x200/f1f1f1/f46c6c",
+    name: "Naram Ketram",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+    job: "Creative Director"
+  }
+
+  - {
+    img: "http://placehold.it/210x200/f1f1f1/f46c6c",
+    name: "Fernando Comet",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+    job: "Ceo & Founder"
+  }
+
+  - {
+    img: "http://placehold.it/210x200/f1f1f1/f46c6c",
+    name: "Adedayo saheed",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+    job: "Creative Director"
+  }

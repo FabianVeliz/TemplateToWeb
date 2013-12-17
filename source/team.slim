@@ -1,0 +1,20 @@
+section#team
+  h1.titulo The Team
+  ul
+    - data.team.person.each do |f|
+      li.art
+
+        a href="#"
+          img src="#{f.img}"
+
+        h2
+          ="#{f.name}"
+
+        h3
+          ="#{f.job}"
+
+        h4
+          p
+            ="#{f.description}"
+
+

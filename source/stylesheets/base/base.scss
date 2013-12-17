@@ -21,7 +21,7 @@ body{
 
 
 /* Contenedor */
-.container{
+section#container{
   margin:0 auto;
   max-width: 1440px;
   width: 100%;
@@ -41,7 +41,7 @@ ul{
 }
 
 /* Estilo boton base*/
-.buttom-base{
+a.buttom-base{
   background: $verde;
   color:$blanco;
   padding: 5px 15px;
@@ -49,4 +49,13 @@ ul{
   font-size: 1.3em;
   border-radius: 5px;
   text-decoration: none;
+}
+
+/* Estilo para los titulos */
+h1.titulo{
+  color:$gray;
+  font-family: $open;
+  text-align: center;
+  font-size: 4.4em;
+  font-weight: 200;
 }

@@ -1,0 +1,49 @@
+section#team{
+  text-align: center;
+
+  h1.titulo{
+    margin:80px 0 125px 0;
+  }
+
+  ul{
+    font-family: $open;
+
+    li.art{
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      width: 24%;
+
+      a{
+        display: block;
+        text-align: center;
+
+        img{
+          border-radius: 50%;
+          width: 210px;
+          height: 200px;
+        }
+      }
+
+      h2{
+        margin-top: 60px;
+        font-size: 2.3em;
+        font-weight: 200;
+      }
+
+      h3,h4{
+        font-size: 1.5em;
+        font-weight: 200;
+      }
+
+      h4 {
+        margin-top: 25px;
+        padding:0 5%;
+
+        p{
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
