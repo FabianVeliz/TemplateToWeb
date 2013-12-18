@@ -1,0 +1,31 @@
+/* mixin */
+
+@mixin breakpoint($media) {
+  @if $media == midi {
+    @media only screen and (max-width: $break-midi) {
+      @content;
+    }
+  }
+
+  @else if $media == mini {
+    @media only screen and (max-width: $break-mini) {
+      @content;
+    }
+  }
+
+  @else if $media == micro {
+    @media only screen and (max-width: $break-micro) {
+      @content;
+    }
+  }
+}
+
+/*
+
+@include breakpoint(midi){
+  width: 100%
+}
+
+Inclusion de breakpoint
+
+*/

@@ -1,47 +1,77 @@
 /* header */
 
-header{
-  h1{
-    display:inline-block;
-    vertical-align: middle;
-    width: 18%;
-    text-align: right;
+header h1{
+  display:inline-block;
+  vertical-align: middle;
+  width: 18%;
+  text-align: right;
 
-    img{
-      width: 100%;
-      max-width: 130px;
-      height: 45px;
-    }
+  @include breakpoint(mini){
+    width: 89%;
+    text-align: left;
   }
 
-  nav{
+  img{
+    width: 130px;
+    height: 45px;
+  }
+}
+
+header span{
+  display:none;
+  text-align: right;
+  vertical-align: middle;
+  width: 9%;
+
+  @include breakpoint (mini){
     display: inline-block;
-    vertical-align: middle;
-    width: 79%;
-    text-align:right;
+  }
+}
 
-    ul{
-      margin-right: 8.5%;
+header span a{
+  display:block;
+  font-size:3em;
+  color:#000;
+  text-align:right;
+  cursor:pointer;
+  color:$verde;
+}
 
-      li{
-        display: inline-block;
+header nav{
+  display: inline-block;
+  vertical-align: middle;
+  width: 79%;
+  text-align:right;
 
-        &:hover{
-          a{
-            background:$hover-menu;
-            border-bottom: 3px solid $border-bottom;
-            color:$border-bottom;
-          }
-        }
+  @include breakpoint(mini){
+    display: none;
+  }
+}
 
-        a{
-          border-bottom: 3px solid transparent;
-          padding: 40px 25px;
-        }
-      }
-    }
+header nav ul{
+  margin-right: 8.5%;
+
+  @include breakpoint (midi){
+    margin-right: 0;
   }
 
+}
+
+header nav ul li{
+  display: inline-block;
+
+  &:hover{
+    a{
+      background:$hover-menu;
+      border-bottom: 3px solid $border-bottom;
+      color:$border-bottom;
+    }
+  }
+}
+
+header nav ul li a{
+  border-bottom: 3px solid transparent;
+  padding: 40px 25px;
 }
 
 /* End header */

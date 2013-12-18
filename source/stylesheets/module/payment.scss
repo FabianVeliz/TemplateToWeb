@@ -9,9 +9,14 @@ section#payment{
 
     li{
       display: inline-block;
-      width: 370px;
+      max-width: 370px;
       margin: 1%;
       background: $blanco;
+      width: 100%;
+
+      @include breakpoint(micro){
+        width: 97%;
+      }
 
       span{
         display: block;

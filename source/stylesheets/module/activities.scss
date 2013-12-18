@@ -5,8 +5,13 @@ section#activities{
 
   article.four-art{
     display: inline-block;
-    width: 24%;
+    min-width: 250px;
     vertical-align: middle;
+    width: 24%;
+
+    @include breakpoint(midi){
+      margin-bottom: 30px;
+    }
 
     .icon{
       font-size: 4em;

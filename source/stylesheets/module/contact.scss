@@ -3,6 +3,15 @@ section#contact{
   text-align: center;
   font-family: $open;
   padding:0 135px 150px;
+  overflow: hidden;
+
+  @include breakpoint(midi){
+    padding: 0 15px 150px;
+  }
+
+  @include breakpoint(micro){
+    padding: 0 0 10px;
+  }
 
   h1.titulo{
     color:$blanco;
@@ -12,13 +21,19 @@ section#contact{
 
   article.father{
     margin-top: 12px;
+    overflow: hidden;
 
     .box50{
-      display: inline-block;
+      float: right;
       text-align: left;
-      vertical-align: top;
       width: 49.7%;
       color:$blanco;
+
+      @include breakpoint(mini){
+        width: 98%;
+        margin-bottom:100px;
+        text-align: center;
+      }
 
       h2{
         font-size: 2.3em;
@@ -29,6 +44,10 @@ section#contact{
         font-size: 1.5em;
         font-weight: 200;
         padding-right: 20%;
+
+        @include breakpoint(mini){
+          padding-right: 0;
+        }
       }
 
       .widjets{
@@ -67,6 +86,10 @@ section#contact{
         float: left;
         margin: 0 2.5% 35px;
 
+        @include breakpoint(micro){
+          width: 90%;
+        }
+
         input{
           border: none;
           padding: 10px;
@@ -88,6 +111,10 @@ section#contact{
         font-size: 1.7em;
         border-radius: 5px;
         display: block;
+
+        @include breakpoint(micro){
+          width: 87%;
+        }
       }
 
       .box{
@@ -101,6 +128,11 @@ section#contact{
           font-size: 2.5em;
           text-align: center;
           padding: 9px 16px;
+
+          @include breakpoint(micro){
+            position: relative;
+            margin:0 auto;
+          }
         }
       }
     }

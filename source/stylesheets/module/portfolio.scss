@@ -13,6 +13,15 @@ section#portfolio{
       display: inline-block;
       vertical-align: top;
       margin:0 2% 2% 0;
+
+      a {
+          max-width: 370px;
+
+        img{
+          width: 100%;
+          display: block;
+        }
+      }
     }
   }
 
