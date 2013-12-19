@@ -1,0 +1,9 @@
+.is-active{
+  background:$hover-menu;
+  border-bottom: 3px solid $border-bottom;
+  color:$border-bottom;
+
+  @include breakpoint(mini){
+    border-bottom: 1px solid #4accce;
+  }
+}

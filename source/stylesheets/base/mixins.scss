@@ -18,14 +18,17 @@
       @content;
     }
   }
+
+  @else if $media == medio {
+    @media only screen and (max-width: $break-medio) {
+      @content;
+    }
+  }
+
+  @else if $media == other {
+    @media only screen and (min-width: $break-other) {
+      @content;
+    }
+  }
 }
 
-/*
-
-@include breakpoint(midi){
-  width: 100%
-}
-
-Inclusion de breakpoint
-
-*/

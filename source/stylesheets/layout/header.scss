@@ -30,7 +30,7 @@ header span{
 
 header span a{
   display:block;
-  font-size:3em;
+  font-size:4em;
   color:#000;
   text-align:right;
   cursor:pointer;
@@ -45,6 +45,12 @@ header nav{
 
   @include breakpoint(mini){
     display: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  @include breakpoint(other){
+    display: inline-block!important;
   }
 }
 
@@ -60,18 +66,18 @@ header nav ul{
 header nav ul li{
   display: inline-block;
 
-  &:hover{
-    a{
-      background:$hover-menu;
-      border-bottom: 3px solid $border-bottom;
-      color:$border-bottom;
-    }
+  @include breakpoint(mini){
+    display: block;
   }
 }
 
 header nav ul li a{
-  border-bottom: 3px solid transparent;
   padding: 40px 25px;
+
+  @include breakpoint(mini){
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 12px 15px;
+  }
 }
 
 /* End header */

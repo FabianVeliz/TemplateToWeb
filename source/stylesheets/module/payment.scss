@@ -1,6 +1,6 @@
 section#payment{
   background: #f1f1f1;
-  padding-top: 105px;
+  padding-top: 75px;
   font-family: $open;
   padding-bottom: 80px;
 
@@ -16,6 +16,7 @@ section#payment{
 
       @include breakpoint(micro){
         width: 97%;
+        margin:2% 0;
       }
 
       span{
@@ -42,6 +43,7 @@ section#payment{
         font-size: 1.5em;
         padding:12px 0;
       }
+
       .box{
         text-align: center;
         margin: 35px 0;
