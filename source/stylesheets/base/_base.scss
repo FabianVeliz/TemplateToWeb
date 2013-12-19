@@ -1,0 +1,73 @@
+/* Colores */
+$black:#000;
+$gray:#4e525d;
+$verde:#4cc8d0;
+$border-bottom:#4accce;
+$hover-menu:#f8f9fb;
+$blanco:#fff;
+
+/* Fuentes*/
+$open:'Open Sans', sans-serif;
+
+/* Reset */
+h1,h2,h3,h4,h5,h6,p,ul{
+  margin:0;
+  padding: 0;
+}
+
+html,body{
+  height: 100%;
+}
+
+body{
+  font-size:62.5%;
+}
+
+
+/* Contenedor */
+section#container{
+  margin:0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+/*Estilos para elementos ul y a*/
+ul{
+  list-style: none;
+
+    li a{
+      color:$gray;
+      display: block;
+      text-decoration: none;
+      font-family:$open;
+      font-size: 1.5em;
+    }
+}
+
+/* Estilo boton base*/
+a.buttom-base{
+  background: #4cc8d0;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4em;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-decoration: none;
+  width: 100px;
+}
+
+/* Estilo para los titulos */
+h1.titulo{
+  color:$gray;
+  font-family: $open;
+  text-align: center;
+  font-size: 4.4em;
+  font-weight: 200;
+}
+
+/* Estilo para quitar margen*/
+.not-margin{
+  margin-bottom: 0!important;
+}

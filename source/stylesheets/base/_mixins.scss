@@ -1,0 +1,34 @@
+/* mixin */
+
+@mixin breakpoint($media) {
+  @if $media == midi {
+    @media only screen and (max-width: $break-midi) {
+      @content;
+    }
+  }
+
+  @else if $media == mini {
+    @media only screen and (max-width: $break-mini) {
+      @content;
+    }
+  }
+
+  @else if $media == micro {
+    @media only screen and (max-width: $break-micro) {
+      @content;
+    }
+  }
+
+  @else if $media == medio {
+    @media only screen and (max-width: $break-medio) {
+      @content;
+    }
+  }
+
+  @else if $media == other {
+    @media only screen and (min-width: $break-other) {
+      @content;
+    }
+  }
+}
+

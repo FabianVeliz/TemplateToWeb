@@ -1,0 +1,57 @@
+/* Carga estilos predefinidos del slide */
+@import "flexslider";
+
+section#slider-comments{
+  height: 470px;
+  overflow: hidden;
+}
+
+section#slider-comments .flexslider ul li{
+  text-align: center;
+  font-family: $open;
+  color: $gray;
+
+  h2{
+    margin-top: 130px;
+    font-size: 4.5em;
+    font-weight: 300;
+
+    @include breakpoint(mini){
+      margin-top: 60px;
+    }
+
+    @include breakpoint(micro){
+      font-size: 2.5em;
+    }
+  }
+
+  h3{
+    margin-top: 30px;
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 30px;
+    padding: 0 25%;
+
+    @include breakpoint(medio){
+      font-size: 1.6em;
+      margin-top: 10px;
+    }
+
+    @include breakpoint(medio){
+      font-size: 1.3em;
+    }
+  }
+
+  h4{
+    margin-top: 27px;
+    color: $verde;
+    font-size: 2.2em;
+    font-weight: 200;
+
+    @include breakpoint(medio){
+      text-decoration: underline;
+      font-size: 1.7em;
+      margin-top: 10px;
+    }
+  }
+}

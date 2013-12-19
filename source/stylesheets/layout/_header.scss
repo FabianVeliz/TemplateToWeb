@@ -1,0 +1,83 @@
+/* header */
+
+header h1{
+  display:inline-block;
+  vertical-align: middle;
+  width: 18%;
+  text-align: right;
+
+  @include breakpoint(mini){
+    width: 89%;
+    text-align: left;
+  }
+
+  img{
+    width: 130px;
+    height: 45px;
+  }
+}
+
+header span{
+  display:none;
+  text-align: right;
+  vertical-align: middle;
+  width: 9%;
+
+  @include breakpoint (mini){
+    display: inline-block;
+  }
+}
+
+header span a{
+  display:block;
+  font-size:4em;
+  color:#000;
+  text-align:right;
+  cursor:pointer;
+  color:$verde;
+}
+
+header nav{
+  display: inline-block;
+  vertical-align: middle;
+  width: 79%;
+  text-align:right;
+
+  @include breakpoint(mini){
+    display: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  @include breakpoint(other){
+    display: inline-block!important;
+  }
+}
+
+header nav ul{
+  margin-right: 8.5%;
+
+  @include breakpoint (midi){
+    margin-right: 0;
+  }
+
+}
+
+header nav ul li{
+  display: inline-block;
+
+  @include breakpoint(mini){
+    display: block;
+  }
+}
+
+header nav ul li a{
+  padding: 40px 25px;
+
+  @include breakpoint(mini){
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 12px 15px;
+  }
+}
+
+/* End header */

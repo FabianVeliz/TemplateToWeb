@@ -1,0 +1,40 @@
+section#portfolio{
+  background: #f1f1f1;
+  margin-top: 100px;
+
+  h1.titulo{
+    padding: 36px 0 50px;
+  }
+
+  ul{
+    text-align: center;
+
+    li{
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 1% 2% 0;
+
+      a {
+          max-width: 370px;
+
+        img{
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .box{
+    padding:28px 0 100px 0;
+    text-align: center;
+
+    a{
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      padding: 15px;
+      font-size: 2.5em;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+section#payment{
+  background: #f1f1f1;
+  padding-top: 75px;
+  font-family: $open;
+  padding-bottom: 80px;
+
+  ul{
+    text-align: center;
+
+    li{
+      display: inline-block;
+      max-width: 370px;
+      margin: 1%;
+      background: $blanco;
+      width: 100%;
+
+      @include breakpoint(micro){
+        width: 97%;
+        margin:2% 0;
+      }
+
+      span{
+        display: block;
+        border-bottom: 1px solid #eeeff1;
+        color: $gray;
+      }
+
+      span.title{
+        background: #485460;
+        padding:20px 0;
+        color: $blanco;
+        font-size: 2.5em;
+      }
+
+      span.cost{
+        background: #f8f9fb;
+        padding: 20px 0;
+        font-size: 2.1em;
+      }
+
+      span.detail{
+        color:#afb3b6;
+        font-size: 1.5em;
+        padding:12px 0;
+      }
+
+      .box{
+        text-align: center;
+        margin: 35px 0;
+
+        a{
+          display: block;
+          width: 150px;
+          margin: 0 auto;
+          background: #4e525d;
+          font-size: 1.8em;
+          padding: 7px 10px;
+        }
+      }
+    }
+  }
+}
