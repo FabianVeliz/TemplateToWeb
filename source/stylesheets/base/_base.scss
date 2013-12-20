@@ -21,11 +21,10 @@ html,body{
 
 body{
   font-size:62.5%;
-  font-family: $open;
 }
 
 
-/* Contenedor Home */
+/* Contenedor */
 section#container{
   margin:0 auto;
   max-width: 1440px;
@@ -71,11 +70,4 @@ h1.titulo{
 /* Estilo para quitar margen*/
 .not-margin{
   margin-bottom: 0!important;
-}
-
-/* Container Blog*/
-section#container-blog{
-  margin:0 auto;
-  max-width: 1200px;
-  width: 100%;
 }
