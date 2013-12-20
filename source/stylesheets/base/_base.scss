@@ -5,6 +5,7 @@ $verde:#4cc8d0;
 $border-bottom:#4accce;
 $hover-menu:#f8f9fb;
 $blanco:#fff;
+$pink:#a68fd7;
 
 /* Fuentes*/
 $open:'Open Sans', sans-serif;
@@ -78,4 +79,15 @@ section#container-blog{
   margin:0 auto;
   max-width: 1200px;
   width: 100%;
+}
+
+/* Quita el margin-bottom */
+.not-margin{
+  margin-bottom: 0;
+}
+
+/* Title blog */
+h1.title-blog{
+  font-size: 2.5em;
+  color:gray;
 }

@@ -13,3 +13,9 @@ section#payment ul li:hover{
     background: $verde;
   }
 }
+
+/* Estado pagination */
+.is-active-pagination{
+  background: #485460!important;
+  color: #fff!important;
+}

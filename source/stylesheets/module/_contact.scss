@@ -55,37 +55,6 @@ section#contact{
         }
       }
 
-      .widjets{
-        margin-top: 39px;
-
-        ul li{
-          display: inline-block;
-          margin: 0 0.5% 17px;
-
-          a{
-            font-size: 4em;
-          }
-
-          a.icon-facebook{
-            color:#3b5997;
-          }
-
-          a.icon-twitter{
-            color:#3ec2f3;
-          }
-
-          a.icon-google-plus{
-            color:#e44c41;
-          }
-        }
-
-        p{
-          line-height: 23px;
-          color:#c1ade0;
-          font-size: 1.5em;
-        }
-      }
-
       .box-input{
         width: 45%;
         float: left;
@@ -141,5 +110,36 @@ section#contact{
         }
       }
     }
+  }
+}
+
+.widgets{
+  margin-top: 39px;
+
+  ul li{
+    display: inline-block;
+    margin: 0 0.5% 17px;
+
+    a{
+      font-size: 4em;
+    }
+
+    a.icon-facebook{
+      color:#3b5997;
+    }
+
+    a.icon-twitter{
+      color:#3ec2f3;
+    }
+
+    a.icon-google-plus{
+      color:#e44c41;
+    }
+  }
+
+  p{
+    line-height: 23px;
+    color:#c1ade0;
+    font-size: 1.5em;
   }
 }

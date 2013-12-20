@@ -1,0 +1,18 @@
+section#recent-post{
+  clear: both;
+  margin-top: 50px;
+
+  h1.title-blog{
+    margin-bottom: 20px;
+  }
+
+  ul{
+    list-style: none;
+    font-size: 1.4em;
+
+    li{
+      color:$gray;
+      margin-bottom:18px;
+    }
+  }
+}

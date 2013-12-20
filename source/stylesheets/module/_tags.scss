@@ -1,0 +1,29 @@
+section#tags{
+  margin-top: 45px;
+
+  h1.title-blog{
+    margin-bottom: 20px;
+  }
+
+  ul{
+    list-style: none;
+    text-align: left;
+
+    li{
+      @extend %style-inline;
+      background: #f8f9fb;
+      border-radius: 5px;
+      color:$gray;
+      cursor: default;
+      font-size: 1.4em;
+      margin: 2px 3px;
+      padding: 10px 15px;
+
+      &:hover{
+        background: $verde;
+        color: $blanco;
+      }
+    }
+
+  }
+}

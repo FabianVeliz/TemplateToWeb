@@ -1,0 +1,33 @@
+section#categories{
+  h1.title-blog{
+    margin-top: 40px;
+  }
+
+  ul{
+    list-style: none;
+    font-size: 1.4em;
+    margin-top: 15px;
+
+    li{
+      color:$gray;
+      padding:7px 10px;
+      cursor: pointer;
+
+      span{
+        color:$verde;
+      }
+
+    }
+
+    p.into{
+      background: #485460;
+      color: $blanco;
+      border-radius:5px;
+      margin-left: 2%;
+      display: block;
+      padding:10px;
+      margin-top: 10px;
+      display: none;
+    }
+  }
+}

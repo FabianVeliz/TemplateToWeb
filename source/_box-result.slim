@@ -1,17 +1,47 @@
-article.box-result
+- data.results.resultados.each do |r|
 
-  .box1
-    h1 22
-    p Sep
-    p 2013
+  article.box-result
 
-  .box2
-    h2
-      |Lorem Ipsum is simply dummy text of the printing
-    .content
-      .box-img
-        img src="http://placehold.it/270x235/888888/f1f1f1"
-      .text
-        p
-          |Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-        a href="#" Read More>
+    //Caja que contiene la fecha
+    .box1
+      h1  ="#{r.date}"
+      p  ="#{r.month}"
+      p ="#{r.year}"
+
+    //Caja que contiene los resultados
+    .box2
+      h2 ="#{r.title_result}"
+      .content
+
+        //Contenedor de la imagen
+        .box-img
+          img src="#{r.image}"
+
+        //Texto
+        .text
+
+          p ="#{r.p1}"
+
+          p.not-margin ="#{r.p2}"
+
+          a href="#" Read More >
+
+      //Footer de los resultados
+      .footer-result
+        .by
+          |By &nbsp;
+          span.span1 ="#{r.name}"
+          span.span1 ="#{r.comments}"
+
+        .tags
+          |Tags: &nbsp;
+          span.tag ="#{r.tag1}"
+          span.tag ="#{r.tag2}"
+          span.tag ="#{r.tag3}"
+
+        .share
+          |Share &nbsp;
+          a.icon-twitter href="#{r.share_twitter}"
+          a.icon-facebook href="#{r.share_facebook}"
+
+

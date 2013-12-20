@@ -4,6 +4,7 @@
 //= require behaviors/swiper
 //= require behaviors/menu-responsive
 //= require behaviors/jquery.flexslider
+//= require behaviors/slide-listas
 
 
   $(window).load(function() {
