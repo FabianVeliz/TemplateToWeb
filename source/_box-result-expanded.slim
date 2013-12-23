@@ -1,0 +1,154 @@
+- data.results.blog_expanded.each do |r|
+
+  article.box-result
+
+    //Caja que contiene la fecha
+    .box1
+      h1  ="#{r.date}"
+      p  ="#{r.month}"
+      p ="#{r.year}"
+
+    //Caja que contiene los resultados
+    .box2
+      h2 ="#{r.title_result}"
+
+      //Footer de los resultados
+      .footer-result
+        .by
+          |By &nbsp;
+          span.span1 ="#{r.name}"
+          span.span1 ="#{r.comments}"
+
+        .tags
+          |Tags: &nbsp;
+          span.tag ="#{r.tag1}"
+          span.tag ="#{r.tag2}"
+          span.tag ="#{r.tag3}"
+
+        .share
+          |Share &nbsp;
+          a.icon-twitter href="#{r.share_twitter}"
+          a.icon-facebook href="#{r.share_facebook}"
+
+      .content
+
+        //Contenedor de la imagen
+        .box-img
+          img src="#{r.image}"
+
+        //Texto
+        .text
+
+          p ="#{r.p1}"
+
+          p ="#{r.p2}"
+
+        .text-block
+
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+
+        h2.title-new there are many variations of passages of lorem ipsum available where bla....
+
+        .text-block.margin
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+
+        .box-img.box-img2
+          img src="../images/new-image.jpg"
+
+        .text-block.margin
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+
+          p ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+
+        .leyend
+          span.icon-quote.icon
+          span since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchange
+          p Robort John
+
+        .widgets-2
+          .share Share with your friends
+          ul
+            li
+             a href="https://twitter.com/share" class="twitter-share-button" data-url="https://dev.twitter.com" data-via="your_screen_name" data-lang="en" Tweet
+
+            li
+              iframe.reset src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"
+
+            li
+              .g-plusone data-size="medium"
+
+        ul.post
+          li
+            a href="#" <
+            span Previus Post
+
+          li
+            span Next Post
+            a href="#" >
+
+        section#recent-post
+          h1.title-blog Recent post
+          ul
+            li Lorem Ipsum is simply dummy
+            li Lorem Ipsum is simply dummy
+            li Lorem Ipsum is simply dummy
+            li Lorem Ipsum is simply dummy
+
+        section#comments
+          h1.title-blog 3 Comments
+
+          .comment
+            .box-image
+              img src="http://placehold.it/100x100/f1f1f1/f46c6c"
+
+            .inline
+              .fecha krisnsmamam, 10 de october 2013
+              a href="#" Reply
+
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+
+          .comment
+            .box-image
+              img src="http://placehold.it/100x100/f1f1f1/f46c6c"
+
+            .inline
+              .fecha krisnsmamam, 10 de october 2013
+              a href="#" Reply
+
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,industry's standard dummy text ever since the 1500s,
+
+          .comment.comment2
+            .box-image
+              img src="http://placehold.it/100x100/f1f1f1/f46c6c"
+
+            .inline
+              .fecha krisnsmamam, 10 de october 2013
+              a href="#" Reply
+
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+
+        section#leave-comment
+          h1.title-blog.algo Leave a Comment
+          form
+            .box-input
+              input type="text" placeholder="Name*"
+
+            .box-input
+              input type="text" placeholder="Email*"
+
+            .box-textarea
+              textarea placeholder="Your comment"
+
+            .box-check
+                input type="checkbox"
+                label Notify me of followup comments via e-mail
+
+            .box-buttom
+              a.buttom-base href="#" Send
+
+
+
+
+

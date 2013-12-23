@@ -1,4 +1,4 @@
-section#footer-blog{
+section#footer-blog,#footer-blog-expanded{
   border-top: 1px solid #e9e9e9;
   margin-top: 95px;
   padding-bottom: 50px;
@@ -15,4 +15,8 @@ section#footer-blog{
     color: #7c7c7c;
   }
 
+}
+
+#footer-blog-expanded{
+  margin-top: 0px;
 }

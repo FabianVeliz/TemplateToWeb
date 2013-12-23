@@ -1,8 +1,12 @@
-section#box-left{
+section#box-left,#box-left-expanded{
   display: inline-block;
   margin-top: 75px;
   vertical-align: middle;
   width: 71%;
   margin-left: 2%;
+}
+
+#box-left-expanded{
+  margin-top: 91px;
 }
 
