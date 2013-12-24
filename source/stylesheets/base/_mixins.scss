@@ -1,7 +1,14 @@
 /* mixin */
 
 @mixin breakpoint($media) {
-  @if $media == midi {
+
+  @if $media == maxi {
+    @media only screen and (max-width: $break-maxi) {
+      @content;
+    }
+  }
+
+  @else if $media == midi {
     @media only screen and (max-width: $break-midi) {
       @content;
     }

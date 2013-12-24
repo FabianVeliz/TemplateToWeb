@@ -12,7 +12,7 @@ header h1{
   text-align: right;
 
   @include breakpoint(mini){
-    width: 89%;
+    width: 86%;
     text-align: left;
   }
 

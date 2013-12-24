@@ -1,12 +1,11 @@
-section#box-left,#box-left-expanded{
+section#box-left,%box-left{
   display: inline-block;
   margin-top: 75px;
   vertical-align: middle;
   width: 71%;
   margin-left: 2%;
-}
 
-#box-left-expanded{
-  margin-top: 91px;
+  @include breakpoint(mini) {
+    width: 100%;
+  }
 }
-

@@ -4,7 +4,8 @@
   color:$border-bottom;
 
   @include breakpoint(mini){
-    border-bottom: 1px solid #4accce;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    background: rgb(241, 241, 241);
   }
 }
 
@@ -18,4 +19,9 @@ section#payment ul li:hover{
 .is-active-pagination{
   background: #485460!important;
   color: #fff!important;
+}
+
+.is-box-left-expanded{
+  @extend %box-left;
+  margin-top: 91px;
 }

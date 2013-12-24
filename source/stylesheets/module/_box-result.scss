@@ -7,7 +7,6 @@
 .box1,.box2,%style-inline{
   display: inline-block;
   vertical-align: top;
-
 }
 
 .box1{
@@ -16,13 +15,23 @@
   font-size: 1.6em;
   padding: 7px 17px;
   text-align: center;
-  max-width: 36px;
-  width: 5%;
+  width: 37px;
 }
 
 .box2{
   margin-left: 3%;
   width: 88%;
+
+  @include breakpoint(maxi) {
+    margin-left: 0;
+  }
+
+  @include breakpoint(medio){
+    display: block;
+    border:1px solid #ebebeb;
+    width: 92%;
+    padding: 10px;
+  }
 }
 
 .box2 h2{
@@ -35,6 +44,12 @@
   @extend %style-inline;
 }
 
+.box2 .content .text{
+  @include breakpoint(medio){
+    width: 100%!important;
+  }
+}
+
 .box2 .content .box-img{
   width:39%;
   margin-top: 20px;
@@ -43,6 +58,19 @@
     display: block;
     max-width: 270px;
     width: 100%;
+
+    @include breakpoint(medio){
+      margin:0 auto;
+    }
+  }
+
+  @include breakpoint(medio){
+    width: 100%;
+  }
+}
+.box2 .content{
+  @include breakpoint(medio){
+    text-align: center;
   }
 }
 
@@ -72,11 +100,14 @@
   border-bottom:1px solid rgb(235, 235, 235);
   margin-top: 20px;
 
+    @include breakpoint(medio){
+      border-bottom:none;
+    }
+
   div{
     @extend %style-inline;
     font-size: 1.5em;
     color: $gray;
-    vertical-align: middle;
   }
 
   .by{

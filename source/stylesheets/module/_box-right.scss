@@ -4,4 +4,8 @@ section#box-right{
   margin-top: 75px;
   vertical-align: top;
   width: 23%;
+
+  @include breakpoint(mini) {
+    width: 100%;
+  }
 }
