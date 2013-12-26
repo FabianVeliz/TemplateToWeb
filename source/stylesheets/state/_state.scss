@@ -1,8 +1,12 @@
+/* Clase activa del menu */
+
 .is-active{
   background:$hover-menu;
   border-bottom: 3px solid $border-bottom;
 
-  a{color:$verde;}
+  a{
+    color:$verde;
+  }
 
   @include breakpoint(mini){
     border-bottom: 1px solid rgb(223, 223, 223);
@@ -10,17 +14,14 @@
   }
 }
 
-section#payment ul li:hover{
-  span.title,.box a.buttom-base{
-    background: $verde;
-  }
-}
+/* Estado activo paginacion */
 
-/* Estado pagination */
 .is-active-pagination{
   background: #485460!important;
   color: #fff!important;
 }
+
+/* Box left expandido */
 
 .is-box-left-expanded{
   @extend %box-left;

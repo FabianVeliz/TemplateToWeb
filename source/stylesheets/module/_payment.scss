@@ -60,3 +60,9 @@ section#payment{
     }
   }
 }
+
+section#payment ul li:hover{
+  span.title,.box a.buttom-base{
+    background: $verde;
+  }
+}
