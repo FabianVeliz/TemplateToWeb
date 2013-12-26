@@ -1,8 +1,32 @@
 section#banner-blog{
   width: 100%;
+  min-height: 90px;
+  position: relative;
+
+  @include breakpoint(mini){
+    background:url('../../images/banner-blog.jpg') no-repeat center center;
+    background-position: -260px;
+  }
 
   img{
     display: block;
     width: 100%;
+
+    @include breakpoint(mini){
+      display: none;
+    }
+  }
+
+  h1.title-blog2{
+    position: absolute;
+    font-size: 4em;
+    color:$blanco;
+    font-family: $open;
+    text-align: center;
+    margin-top:-35px;
+    margin-left:-35px;
+    top: 55%;
+    left: 50%;
+
   }
 }

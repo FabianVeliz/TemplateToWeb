@@ -1,4 +1,9 @@
 section#categories{
+
+  @include breakpoint(mini){
+    text-align: center;
+  }
+
   h1.title-blog{
     margin-top: 40px;
   }

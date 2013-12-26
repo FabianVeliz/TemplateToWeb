@@ -2,17 +2,17 @@
 
   article.box-result
 
-    //Caja que contiene la fecha
+    // Caja que contiene la fecha
     .box1
       h1  ="#{r.date}"
       p  ="#{r.month}"
       p ="#{r.year}"
 
-    //Caja que contiene los resultados
+    // Caja que contiene los resultados
     .box2
       h2 ="#{r.title_result}"
 
-      //Footer de los resultados
+      // Footer de los resultados
       .footer-result
         .by
           |By &nbsp;
@@ -32,40 +32,39 @@
 
       .content
 
-        //Contenedor de la imagen
+        // Contenedor de la imagen
         .box-img
           img src="#{r.image}"
 
-        //Texto
+        // Texto con estilo inline
         .text
 
           p ="#{r.p1}"
 
           p ="#{r.p2}"
 
+        // Texto con estilo block
         .text-block
 
-          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+          p ="#{r.p3}"
 
-          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+          p ="#{r.p3}"
 
-        h2.title-new there are many variations of passages of lorem ipsum available where bla....
+          h2.title-new ="#{r.subtitle}"
 
-        .text-block.margin
           p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
 
-        .box-img.box-img2
-          img src="../images/new-image.jpg"
+          .box-img.box-img2
+            img src="../images/new-image.jpg"
 
-        .text-block.margin
           p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
 
           p ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
 
-        .leyend
-          span.icon-quote.icon
-          span since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchange
-          p Robort John
+          .leyend
+            span.icon-quote.icon
+            span since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchange
+            p.author Robort John
 
         .widgets-2
           .share Share with your friends

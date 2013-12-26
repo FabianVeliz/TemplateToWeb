@@ -2,6 +2,10 @@ section#recent-post{
   clear: both;
   margin-top: 50px;
 
+  @include breakpoint(mini){
+    text-align: center;
+  }
+
   h1.title-blog{
     margin-bottom: 20px;
   }

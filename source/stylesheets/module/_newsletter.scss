@@ -1,5 +1,9 @@
 section#newsletter{
   margin-top: 20px;
+
+  @include breakpoint(mini){
+    text-align: center;
+  }
 }
 
 section#newsletter .box-input{
@@ -32,6 +36,10 @@ section#newsletter .box-input{
 
 .box-input{
   width: 277px!important;
+
+  @include breakpoint(mini){
+    margin:0 auto;
+  }
 }
 
 
@@ -65,6 +73,10 @@ section#newsletter form{
     padding: 10px 0;
     text-align: center;
     width: 170px;
+
+    @include breakpoint(mini){
+      margin:0 auto;
+    }
   }
 }
 

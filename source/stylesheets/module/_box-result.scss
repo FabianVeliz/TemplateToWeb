@@ -29,8 +29,7 @@
   @include breakpoint(medio){
     display: block;
     border:1px solid #ebebeb;
-    width: 92%;
-    padding: 10px;
+    width: 96%;
   }
 }
 
@@ -38,6 +37,10 @@
   font-size: 2.4em;
   margin-top: 3px;
   color: $gray;
+
+  @include breakpoint(medio){
+    text-align: center;
+  }
 }
 
 .box2 .content .box-img,.text{
@@ -100,14 +103,20 @@
   border-bottom:1px solid rgb(235, 235, 235);
   margin-top: 20px;
 
-    @include breakpoint(medio){
-      border-bottom:none;
+    @include breakpoint(mini){
+      background: rgb(247, 247, 247);
     }
 
   div{
     @extend %style-inline;
     font-size: 1.5em;
     color: $gray;
+
+    @include breakpoint(mini){
+      margin-bottom: 8px;
+      display: block;
+      width: 100%!important;
+    }
   }
 
   .by{
@@ -116,6 +125,10 @@
     span{
       color:$pink;
       margin-right: 12%;
+
+      @include breakpoint(mini){
+        margin-right: 3%;
+      }
     }
   }
 
@@ -133,13 +146,19 @@
       margin-right: 6%;
       vertical-align: middle;
       text-decoration: none;
+
+      @include breakpoint(mini){
+        margin-right: 3%;
+      }
     }
   }
 }
 
+
+
 /* Blog expandido */
 
-#box-left-expanded{
+.is-box-left-expanded{
   .box-result{
     .box2{
 
@@ -346,7 +365,8 @@
   }
 }
 
-#box-left-expanded .box-result .box2 section#leave-comment{
+
+.is-box-left-expanded .box-result .box2 section#leave-comment{
   .algo{
     margin-top: 20px;
   }

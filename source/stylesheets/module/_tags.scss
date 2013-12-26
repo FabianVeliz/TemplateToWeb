@@ -1,6 +1,10 @@
 section#tags{
   margin-top: 45px;
 
+  @include breakpoint(mini){
+    text-align: center;
+  }
+
   h1.title-blog{
     margin-bottom: 20px;
   }
@@ -8,6 +12,10 @@ section#tags{
   ul{
     list-style: none;
     text-align: left;
+
+    @include breakpoint(mini){
+      text-align: center;
+    }
 
     li{
       @extend %style-inline;
