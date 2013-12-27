@@ -18,6 +18,10 @@ section#popular-post{
       display: block;
       max-width: 270px;
       width: 100%;
+
+      @include breakpoint(mini){
+        margin:0 auto;
+      }
     }
   }
 

@@ -1,10 +1,6 @@
-section#recent-post{
+section#recent-post,.recent-post-blog-expanded{
   clear: both;
   margin-top: 50px;
-
-  @include breakpoint(mini){
-    text-align: center;
-  }
 
   h1.title-blog{
     margin-bottom: 20px;
@@ -18,5 +14,11 @@ section#recent-post{
       color:$gray;
       margin-bottom:18px;
     }
+  }
+}
+
+section#recent-post{
+  @include breakpoint(mini){
+    text-align: center;
   }
 }

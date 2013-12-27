@@ -21,9 +21,25 @@
   color: #fff!important;
 }
 
-/* Box left expandido */
+/*========= Box left expandido =========*/
 
 .is-box-left-expanded{
   @extend %box-left;
   margin-top: 91px;
+
+  .box-result .box2 .content .text-block{
+    @include breakpoint(mini){
+      margin-top: 0;
+    }
+  }
+
+  .box-result .box2 .content .widgets-blog-expanded{
+    @include breakpoint(mini){
+      width: 90%;
+      margin:60px auto;
+    }
+  }
+
 }
+
+/*========= Box left expandido =========*/
